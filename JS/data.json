@@ -1,0 +1,50 @@
+var movies = `[
+	{
+		"title":"UglyDolls", 
+		"description":"Mit 'UglyDolls' bringt Animationsspezialist Kelly Asbury die gleichnamigen Plüschpuppen in die Kinos. Die herzerwärmende Botschaft lautet: Sei einfach du selbst!",
+		"image":"img/placeholder.png",
+		"alt":"Movie Poster UglyDolls",
+		"rating":0
+	},
+
+	{
+		"title":"Gemini Man",
+		"description":"Will Smith in einem wahrhaft atemberaubenden Action-Trip – tiefgründig, hochspannend und visuell bahnbrechend.",
+		"image":"img/placeholder.png",
+		"alt":"Movie Poster Gemini Man",
+		"rating":0
+	},
+
+	{
+		"title":"Deutschstunde", 
+		"description":"Deutschstunde bietet zeitlosen Kinostoff: zwei Freunde werden erbitterte Feinde – und zwischen ihnen steht ein elfjähriger Junge, der von beiden geliebt werden will.",
+		"image":"img/placeholder.png",
+		"alt":"Movie Poster Deutschstunde",
+		"rating":0
+	},
+	
+	{
+		"title":"Joker", 
+		"description":"Der Film 'Joker' erzählt die Geschichte Batmans ikonischen Erzfeindes wie diese noch nie zuvor auf der Kinoleinwand zu sehen war.",
+		"image":"img/placeholder.png",
+		"alt":"Movie Poster Joker",
+		"rating":0
+	},
+	
+	{
+		"title":"Dem Horizont so nah", 
+		"description":"Regisseur Tim Trachte erzählt eine wahre und zutiefst bewegende Liebesgeschichte über Mut, Vertrauen und die Kraft loszulassen.",
+		"image":"img/placeholder.png",
+		"alt":"Movie Poster Dem Horizont so nah",
+		"rating":0
+	},
+	
+	{
+		"title":"Dora und die goldene Stadt", 
+		"description":"Dora, die beliebte Entdeckerheldin, muss sich ihrer wohl bisher größten Herausforderung stellen und kommt mit 'Dora und die goldene Stadt' endlich ins Kino.",
+		"image":"img/placeholder.png",
+		"alt":"Movie Poster Dora und die goldene Stadt",
+		"rating":0
+	}]`;
+
+//{"title":"", "description":"","image":"../img/placeholder.png","rating":0},

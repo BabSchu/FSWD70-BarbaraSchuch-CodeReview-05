@@ -1,0 +1,19 @@
+.container-fluid {
+  background-color: #1d2329; }
+
+header, footer {
+  background-color: #000000; }
+
+.movieCardBg {
+  background-color: #000000; }
+
+.rating {
+  width: 3.5vw;
+  height: 3.5vw; }
+  .rating p {
+    font-size: 2.5vw; }
+
+img {
+  box-shadow: 1px 1px 2px #454545, -1px -1px 2px #454545; }
+
+/*# sourceMappingURL=style.css.map */
