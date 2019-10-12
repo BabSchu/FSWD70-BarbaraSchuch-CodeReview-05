@@ -10,54 +10,38 @@
 	<title>Movie Factory</title>
 </head>
 <body>
-	<header id="header"><!-- /header start -->
+	<header id="header"><!-- header start -->
 		<h1 class="text-center text-light font-weight-normal py-3">Movie Factory</h1>
 		<nav class="navbar navbar-dark bg-dark">
-				 <span class="navbar-brand mb-0 h1">Home</span>
-		</nav>			
-	</header><!-- /header end -->
+			<a class="navbar-brand mb-0 h1" href="#">Home</a>
+		</nav>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-end"><!--sort button--->
+			<button type="button" id="sort" class="btn border">Sort by Rating</button>
+			<!-- <p class="h4 font-weight-normal mb-0 pr-3">Sort by</p>
+			<select class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<option class="dropdown-item" href="#">Name</option>
+					<option class="dropdown-item" id="sortRatingHigh" href="#">Rating: High to Low</option>
+					<option class="dropdown-item" href="#">Rating: Low to High</option>
+				</div>
+			</select> -->
+		</nav>
+
+	</header><!-- header end -->
 
 	<main><!--main start--->
 		<div class="container-fluid">
 			<h2 class="text-center text-light font-weight-normal">Movies</h2>
 			<div class="row movieCard">
-				<!-- <div class="col-12 col-md-6">
-					<div class="card mb-3">
-						<div class="row no-gutters">
-							<div class="col-md-4 p-5 p-md-3">
-								<img src="img/placeholder.png" class="card-img" alt="...">
-							</div>
-							<div class="col-md-8">
-								<div class="card-body h-100 d-flex flex-column">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									<div class="card-text d-flex flex-grow-1 align-items-end justify-content-end">
-										<button type=button class="btn p-0 d-flex align-items-center align-bottom mb-0">								
-											<p class="text-success text-right mb-0 mr-1">Like
-												<i class="fas fa-thumbs-up"></i>
-											<div class="rounded-circle bg-success rating text-center text-light">
-												<p class="font-weight-light mb-0 h-100 align-middle">1</p>
-											</div>
-											</button>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>					
-				</div>--->				
+				<!--movieCard JS-Object-->	
 			</div>
 		</div>
-		<div class="container">
-    <a class="like">
-        <i class="fa fa-thumbs-o-up"></i>  Like
-        <input class="qty1" name="qty1" readonly="readonly" type="text" value="0" />
-    </a>
-    </div>	
 	</main>
-	<footer class="py-3"><!-- /header start -->
+
+	<footer class="py-3"><!-- footer start -->
 		<h1 class="text-center text-light font-weight-normal">Movie Factory</h1>		
-	</footer><!-- /header end -->
+	</footer><!-- footer end -->
 
 <!--JQuery<--->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin = "anonymous"></script>
