@@ -1,21 +1,38 @@
 //movie information from json
 var movieCard = JSON.parse(movies);
 
-$( document ).ready(function() {
-//sort by rating high to low
-	$("#sort").on('click', function(){
-		movieCard.sort(function(a, b){
-		    var a1= a.rating, b1= b.rating;
-		    if(a1== b1) return 0;
-		    return a1< b1? 1: -1;
-		});
-	 console.table(movieCard);
+    //sort by rating high to low
 
-	 });
+    $("#sort").on('click', function(){
+    	movieCard.sort(function sortRating (a, b){
+    	    var a1= a.rating, b1= b.rating;
+    	    if(a1== b1) return 0;
+    	    return a1< b1? 1: -1;
+    	});
+     console.table(movieCard);
+     update();
 
-//add MovieCard
-	for (let i = 0; i < movieCard.length; i++) {
-		$(`<div class="col-12 col-md-6 px-5 mb-3">
+     });
+
+    // function sortRating(a, b) {
+    //     var a1 = a.rating,
+    //         b1 = b.rating;
+    //     if (a1 == b1) return 0;
+    //     return a1 < b1 ? 1 : -1;
+        
+    // }
+    // movieCard.sort(sortRating);
+
+    // console.table(movieCard);
+
+
+    //add MovieCard
+
+
+ function update (){
+ 	$('.movieCard').html("");
+        for (let i = 0; i < movieCard.length; i++) {
+            $(`<div class="col-12 col-md-6 px-5 mb-3">
 				<div class="card h-100 movieCardBg text-white-50">
 					<div class="row no-gutters">
 						<div class="col-md-4 p-5 p-md-3 shadow-sm">
@@ -39,19 +56,22 @@ $( document ).ready(function() {
 						</div>
 					</div>
 				</div>`).appendTo(`.movieCard`);
-	 }
+        }
+        }
+    
+
+update();
 //increment rating
 
-	var likeBtn = $(".lButton");
-	var ratingValue = $(".ratingValue");
+var likeBtn = $(".lButton");
+var ratingValue = $(".ratingValue");
 
-	for(let i = 0; i < movieCard.length; i++){
+for (let i = 0; i < movieCard.length; i++) {
 
-		$(likeBtn[i]).on('click', function(){
-				++movieCard[i].rating;
-				$(ratingValue[i]).text(movieCard[i].rating);
-				console.table(movieCard);
-		});
-	}
+    $(likeBtn[i]).on('click', function() {
+        ++movieCard[i].rating;
+        $(ratingValue[i]).text(movieCard[i].rating);
+        console.table(movieCard);
+    });
+}
 
-});
