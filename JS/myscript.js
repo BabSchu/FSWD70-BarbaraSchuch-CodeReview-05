@@ -59,19 +59,20 @@ function update() {
 					</div>
 				</div>`).appendTo(`.movieCard`);
     }
-var likeBtn = $(".lButton");
-var ratingValue = $(".ratingValue");
 
-for (let i = 0; i < movieCard.length; i++) {
+    //increment rating
 
-    $(likeBtn[i]).on('click', function() {
-        ++movieCard[i].rating;
-        $(ratingValue[i]).text(movieCard[i].rating);
-        console.table(movieCard);
-    });
+    var likeBtn = $(".lButton");
+    var ratingValue = $(".ratingValue");
+
+    for (let i = 0; i < movieCard.length; i++) {
+
+        $(likeBtn[i]).on('click', function() {
+            ++movieCard[i].rating;
+            $(ratingValue[i]).text(movieCard[i].rating);
+            console.table(movieCard);
+        });
+    }
 }
-}
-
 
 update();
-//increment rating
